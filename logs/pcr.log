@@ -1,0 +1,32 @@
+2013-01-29 09:02:12,343 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:02:12,406 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@1a8c064<1>
+2013-01-29 09:02:12,421 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@1eee615<1>
+2013-01-29 09:03:36,093 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
+2013-01-29 09:04:02,640 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
+2013-01-29 09:05:08,750 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:05:12,984 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
+2013-01-29 09:05:28,640 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:05:30,625 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:05:30,687 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@b368f<1>
+2013-01-29 09:05:30,718 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@2b105d<1>
+2013-01-29 09:06:28,328 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:06:29,890 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:06:29,968 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@b368f<1>
+2013-01-29 09:06:29,984 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@2b105d<1>
+2013-01-29 09:09:08,890 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:09:10,687 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:09:10,765 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
+2013-01-29 09:09:10,781 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
+2013-01-29 09:10:01,828 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:10:03,390 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:10:03,453 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
+2013-01-29 09:10:03,468 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
+2013-01-29 09:10:03,468 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
+2013-01-29 09:10:03,484 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
+2013-01-29 09:10:44,109 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
+2013-01-29 09:10:45,671 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
+2013-01-29 09:10:45,734 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
+2013-01-29 09:10:45,750 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
+2013-01-29 09:10:45,765 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
+2013-01-29 09:10:45,765 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
+2013-01-29 09:10:45,890 INFO [com.sincered.pcr.device.ZNetService] - ExitTCP success!

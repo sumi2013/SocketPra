@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration debug="false" xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!--
+      This default ConsoleAppender is used to log all NON perf4j messages
+      to System.out
+    -->
+    <appender name="console.err" class="org.apache.log4j.ConsoleAppender">
+    	<param name="target" value="System.err" />  
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %p [%c] - &lt;%m&gt;%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">  
+            <param name="LevelMin" value="warn" />  
+            <param name="LevelMax" value="fatal" />  
+            <param name="AcceptOnMatch" value="false" />  
+        </filter>  
+    </appender>
+    
+	<appender name="console.out" class="org.apache.log4j.ConsoleAppender">
+    	<param name="target" value="System.out" />  
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %p [%c] - &lt;%m&gt;%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">  
+            <param name="LevelMin" value="debug" />  
+            <param name="LevelMax" value="info" />  
+            <param name="AcceptOnMatch" value="false" />  
+        </filter>  
+    </appender>
+    
+    <appender name="pcr" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../SocketExample/logs/pcr.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %p [%c] - %m%n"/>
+        </layout>
+    </appender>
+    
+    <root>
+        <level value="ALL"/>
+        <appender-ref ref="pcr"/>
+        <appender-ref ref="console.err"/>
+         <appender-ref ref="console.out"/>
+    </root>
+</log4j:configuration>
