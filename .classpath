@@ -5,5 +5,8 @@
 	<classpathentry kind="lib" path="D:/XSD/workspace/SocketExample/jna.jar"/>
 	<classpathentry kind="lib" path="D:/XSD/workspace/SocketExample/log4j-1.2.15.jar"/>
 	<classpathentry kind="lib" path="D:/XSD/workspace/SocketExample/comm.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MINA Lib"/>
+	<classpathentry kind="lib" path="D:/workspace/jar/apache-mina-2.0.7/lib/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/jar/apache-mina-2.0.7/lib/slf4j-log4j12-1.6.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

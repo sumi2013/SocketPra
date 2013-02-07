@@ -46,13 +46,14 @@ public class DoZNet {
 		URL log4jurl = DoZNet.class.getClassLoader().getResource("log4j.xml");
 		PropertyConfigurator.configure(log4jurl);
 		ZNetAdvService advService = new ZNetAdvService();
-		//LongGeneService longGeneService = new LongGeneService("192.168.1.108", 3003);
+		//LongGeneService longGeneService = new LongGeneService("192.168.1.108", 4003);
 		CommandConvertor convertor = new CommandConvertor();
 		System.out.println("start!");
 	
 	
 		try {		
-			
+			//List a = Arrays.asList(1,2,"STATUS");
+			//System.out.println(""+a.contains("STATUS"));
 			
 			
 			//串口通讯
@@ -60,46 +61,40 @@ public class DoZNet {
 			//	comPortService.testComPort();
 			
 			//网口通讯
-			//longGeneService.open();
-			/*String str = "STATUS?";		
-			
-		    byte[] scom = convertor.getSendCommandbyNetworkPort(str);
-			
-		    System.out.println("scom:"+scom+" | "+new String(scom));
-			for(byte t:scom){
-				System.out.print(t+" ");
-			}			
-			System.out.println();	
-		
+		//	longGeneService.open();
 			NetworkPortCommand networkPortCommand = new NetworkPortCommand();
-			Command Status = networkPortCommand.STATUS();
-			System.out.println("cmd:"+Status.getSendCommand());
-			for(byte b:Status.getSendCommand()){
-				System.out.print(b+" ");
-			}
-			System.out.println();
+			Command GETREV = networkPortCommand.GETREV(1);
+			System.out.println("status:"+GETREV.getSendCommand());
 			
-			String str2 = "PROGRAM \"TEST1\"";		
-			byte[] scom2 = convertor.getSendCommandbyNetworkPort(str2);
-			System.out.println("scom2:");
-			for(byte b:scom2){
-				System.out.print(Integer.toHexString(b)+" ");
-			}
-			Status = networkPortCommand.PROGRAM("TEST1");
-			System.out.println("str2:");
-			for(byte b:Status.getSendCommand()){
-				System.out.print(Integer.toHexString(b)+" ");
-			}
-			for(int i=0;i<5;i++){
+			String c = "STATUS?";
+			System.out.println("R:"+c.contains("status"));
+			/*for(int i=0;i<5;i++){
 		    try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {			
 					e.printStackTrace();
 				}
-		    	   System.out.println("sendCommand:"+longGeneService.SendCommand(Status.getSendCommand()));					
-		    	   System.out.println("***************************");	
-		    }
-			*/
+		    	   String cmd = longGeneService.SendCommand(GETREV.getSendCommand());
+		    	   System.out.println("sendCommand:'"+cmd+"'");
+		    	   System.out.println("============================");
+		    	   if(cmd!=null){
+			    	   int length = cmd.length();
+			    	   System.out.println("length:"+length);
+			    	   
+			    	   for(int j=0;j<length;j++){
+			    		   System.out.print("'"+cmd.charAt(j)+"',");
+			    	   }
+			    	   System.out.println();
+			    	   if(cmd.indexOf("!")!=-1){
+				    	   String cutStr = cmd.substring(cmd.indexOf("!")+1, cmd.lastIndexOf("\r"));
+				    	   System.out.println("find:"+cutStr);
+			    	   }
+			    	 
+		    	   }
+		    	  	
+		    	 
+		    }*/
+			
 			
 			
 			
@@ -114,63 +109,11 @@ public class DoZNet {
 		}
 		
 
-		 /**搜索设备 获取设备
-		  * 
-		  */
-		/*	ZNetService netService = new ZNetService();
-			List<Map> devlist = netService.GetSearchAllDevice();
-			for(Map m:devlist){
-				System.out.println("IP:"+m.get("IP"));
-				System.out.println("VERSION:"+m.get("VERSION"));
-				System.out.println("MAC:"+m.get("MAC"));
-				System.out.println("DEVTYPE:"+m.get("DEVTYPE"));
-				System.out.println("IPMODE :"+m.get("IPMODE"));
-				System.out.println("TCPPORT:"+m.get("TCPPORT"));
-			}*/
-	/*	try {			
-			 System.out.println("SearchAll:"+advService.SearchAll());			
-			 Thread.sleep(1000);
-			 byte[] szip=new byte[20];//设备IP
-			 byte[] szver=new byte[20];//设备固件版本号
-			 byte[] szmac=new byte[20];//设备MAC地址
-			 ByteByReference pdevtype=new ByteByReference();//设备类型号
-			 ByteByReference pipmode=new ByteByReference();//IP获取方式
-			 IntByReference ptcpport=new IntByReference();//TCP命令端口
-			 System.out.println("GetSearchDev:"+advService.GetSearchDev(szip, szver, szmac,pdevtype, pipmode,ptcpport));
-			
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		System.out.println("********************************");*/
-		
-		//System.out.println("Cmd:"+advService.SendCmd(new Byte((byte)34), "192.168.1.108", 4001, "pause 0x0a 0x0d", "", new Byte((byte)1)));
-		
 		
 		/**	TCP方式获取设备详细信息
 		 * 
 		 */
-		  //设备属性代号
-		  String[] g_strname= {"TYPE","IP","NAME","C1_OP","C1_PORT","C1_BAUD","C1_DATAB","C1_STOPB","C1_PARITY"};
 		
-		 ZNetService netService = new ZNetService();
-		 List<Map> mlist = netService.GetSearchAllDevice();
-		 for(Map m:mlist){
-			 System.out.println(m.get("IP"));
-			 System.out.println(m.get("MAC"));
-		 }
-		 if(netService.LoginTCP((byte)34, "192.168.1.108",3003, "88888")==1){
-			 ZNetAdvService zNetAdvService = new ZNetAdvService();
-			 zNetAdvService.ModifyDevConfigTCP("IP", new String("192.168.1.109").getBytes());
-			 zNetAdvService.ResetDevTCP();
-			 zNetAdvService.ModifyDevConfigTCP("NAME", new String("192.168.1.109").getBytes());
-			 zNetAdvService.ResetDevTCP();
-			/* Map<String,byte[]> map = new HashMap();
-			 map.put("IP", new String("192.168.1.109").getBytes());
-			 map.put("NAME", new String("SINCERED").getBytes());
-			 System.out.println("MODIFY:"+netService.ModifyDevConfigTCP(map));*/
-		 }
 		 
 		
 	/*	try {
@@ -203,6 +146,7 @@ public class DoZNet {
 		*/
 		
 	
+		
 		
 		
 	

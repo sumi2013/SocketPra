@@ -26,6 +26,11 @@ public class LongGeneService {
 	private String deviceIP;
 	private int devicePort;
 	
+	/**
+	 * 
+	 * @param deviceIP 转换器IP
+	 * @param devicePort 转换器上串口对应的工作端口
+	 */
 	public LongGeneService(String deviceIP,int devicePort) {
 			this.deviceIP=deviceIP;
 			this.devicePort=devicePort;
@@ -43,22 +48,6 @@ public class LongGeneService {
 		return this.receive();
 	}
 	
-	
-	public String SendCommand(String command)throws Exception{
-		System.out.println("sendcommand start~");
-		if(command==null){
-			throw new Exception("command must not be null");
-		}		
-		
-		System.out.println("sendcommand:"+command);
-		
-		
-		this.output.write(command.getBytes());	
-					
-	//	this.output.write(command.getBytes());	
-		
-		return this.receive();
-	}
 	
 	public String receive() throws IOException{		
 		int count=0;

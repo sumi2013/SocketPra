@@ -1,32 +1,443 @@
-2013-01-29 09:02:12,343 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:02:12,406 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@1a8c064<1>
-2013-01-29 09:02:12,421 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@1eee615<1>
-2013-01-29 09:03:36,093 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
-2013-01-29 09:04:02,640 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
-2013-01-29 09:05:08,750 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:05:12,984 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP failed!
-2013-01-29 09:05:28,640 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:05:30,625 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:05:30,687 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@b368f<1>
-2013-01-29 09:05:30,718 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@2b105d<1>
-2013-01-29 09:06:28,328 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:06:29,890 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:06:29,968 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->[B@b368f<1>
-2013-01-29 09:06:29,984 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->[B@2b105d<1>
-2013-01-29 09:09:08,890 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:09:10,687 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:09:10,765 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
-2013-01-29 09:09:10,781 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
-2013-01-29 09:10:01,828 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:10:03,390 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:10:03,453 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
-2013-01-29 09:10:03,468 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
-2013-01-29 09:10:03,468 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
-2013-01-29 09:10:03,484 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
-2013-01-29 09:10:44,109 INFO [com.sincered.pcr.device.ZNetService] - SearchAll success!
-2013-01-29 09:10:45,671 INFO [com.sincered.pcr.device.ZNetService] - LoginTCP success!
-2013-01-29 09:10:45,734 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:NAME->SINCERED<1>
-2013-01-29 09:10:45,750 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
-2013-01-29 09:10:45,765 INFO [com.sincered.pcr.device.ZNetService] - ModifyDevConfigTCP:IP->192.168.1.109<1>
-2013-01-29 09:10:45,765 INFO [com.sincered.pcr.device.ZNetService] - ResetDevTCP:1
-2013-01-29 09:10:45,890 INFO [com.sincered.pcr.device.ZNetService] - ExitTCP success!
+2013-02-07 14:38:24,843 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 14:38:24,843 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 14:38:34,843 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:38:38,437 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 14:38:38,437 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:38,609 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 65]
+2013-02-07 14:38:38,609 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:38,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6C]
+2013-02-07 14:38:38,765 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:38,937 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6C]
+2013-02-07 14:38:38,937 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:39,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=512: 6F]
+2013-02-07 14:38:39,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:39,515 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=512: 0D 0A]
+2013-02-07 14:38:39,515 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:39,531 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:38:49,531 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:38:57,968 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 71]
+2013-02-07 14:38:57,968 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:58,078 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 75]
+2013-02-07 14:38:58,078 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:58,203 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 69]
+2013-02-07 14:38:58,203 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:58,828 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 74]
+2013-02-07 14:38:58,828 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:59,046 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:38:59,046 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:38:59,046 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 14:39:52,062 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 14:39:52,062 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 14:39:53,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 14:39:53,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:53,343 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 65]
+2013-02-07 14:39:53,343 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:53,562 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6C]
+2013-02-07 14:39:53,562 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:53,718 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6C]
+2013-02-07 14:39:53,718 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:53,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=512: 6F]
+2013-02-07 14:39:53,921 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:54,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=512: 0D 0A]
+2013-02-07 14:39:54,359 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:54,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:39:55,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 68]
+2013-02-07 14:39:55,625 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:55,796 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 65]
+2013-02-07 14:39:55,796 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:56,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 6C]
+2013-02-07 14:39:56,328 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:56,500 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 6C]
+2013-02-07 14:39:56,500 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:56,687 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 6F]
+2013-02-07 14:39:56,687 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:59,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:39:59,093 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:39:59,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:40:09,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:40:11,421 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 68]
+2013-02-07 14:40:11,421 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:11,546 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 69]
+2013-02-07 14:40:11,546 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:12,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:40:12,921 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:12,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:40:22,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:40:27,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:27,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:27,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:27,328 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:29,968 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:40:29,968 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:29,968 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:40:39,968 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:40:49,968 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:40:51,781 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:40:51,781 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:51,843 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:40:51,843 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:51,937 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:51,937 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,062 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:40:52,062 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:40:52,093 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,187 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:52,187 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,281 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:40:52,281 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,312 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:40:52,312 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,406 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:52,406 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,515 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:40:52,515 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,515 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:40:52,515 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:52,640 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,718 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:40:52,718 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,750 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:40:52,750 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:52,890 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:40:52,890 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:54,234 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:40:54,234 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:40:54,234 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:41:04,234 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:41:12,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 71]
+2013-02-07 14:41:12,765 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:41:13,375 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 75]
+2013-02-07 14:41:13,375 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:41:13,718 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 69]
+2013-02-07 14:41:13,718 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:41:14,031 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 74]
+2013-02-07 14:41:14,031 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:41:14,562 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:41:14,562 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 14:41:14,562 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 14:42:34,265 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 14:42:34,265 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 14:42:35,250 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 14:42:35,250 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:35,406 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 14:42:35,421 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:35,593 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 68]
+2013-02-07 14:42:35,593 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:36,015 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=1024: 0D 0A]
+2013-02-07 14:42:36,015 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:36,015 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:42:38,375 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=512: 68]
+2013-02-07 14:42:38,375 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:38,531 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=512: 65]
+2013-02-07 14:42:38,531 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:38,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 6C]
+2013-02-07 14:42:38,765 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:38,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 6C]
+2013-02-07 14:42:38,921 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:39,078 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 6F]
+2013-02-07 14:42:39,078 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:39,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=128: 0D 0A]
+2013-02-07 14:42:39,328 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:39,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:42:41,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 68]
+2013-02-07 14:42:41,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:41,265 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 69]
+2013-02-07 14:42:41,265 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:41,500 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 65]
+2013-02-07 14:42:41,500 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:42:42,109 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,125 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:42:42,125 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,218 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:42:42,218 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,343 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 20]
+2013-02-07 14:42:42,343 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,375 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:42:42,375 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,453 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:42:42,453 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,484 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:42:42,484 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,562 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 20]
+2013-02-07 14:42:42,562 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,562 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:42:42,562 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,703 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:42:42,703 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,812 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:42:42,812 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,828 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:42:42,828 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:42,937 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 64]
+2013-02-07 14:42:42,937 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:43,031 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 61]
+2013-02-07 14:42:43,031 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:43,031 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 73]
+2013-02-07 14:42:43,031 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:43,140 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:42:43,140 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:43,140 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:42:44,906 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 71]
+2013-02-07 14:42:44,906 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:45,000 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 75]
+2013-02-07 14:42:45,000 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:45,203 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 69]
+2013-02-07 14:42:45,203 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:45,531 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 74]
+2013-02-07 14:42:45,531 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:45,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:42:45,875 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:42:45,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 14:56:22,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 14:56:22,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 14:56:25,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 14:56:25,875 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:56:26,718 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 65]
+2013-02-07 14:56:26,718 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:56:26,921 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 65]
+2013-02-07 14:56:26,921 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:56:27,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6C]
+2013-02-07 14:56:27,328 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:56:27,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=512: 0D 0A]
+2013-02-07 14:56:27,640 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:56:27,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:56:32,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:56:37,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:56:42,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:56:47,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:56:52,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:56:57,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:02,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:07,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:12,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:17,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:22,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:27,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:32,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:37,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:42,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:47,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:52,656 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 14:57:54,375 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=512: 71]
+2013-02-07 14:57:54,375 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:54,468 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 69]
+2013-02-07 14:57:54,468 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:56,859 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=256: 08]
+2013-02-07 14:57:56,859 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:57,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 75]
+2013-02-07 14:57:57,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:57,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=128: 69]
+2013-02-07 14:57:57,625 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:57,734 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 74]
+2013-02-07 14:57:57,734 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:58,343 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:57:58,343 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:57:58,343 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 14:58:02,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 71]
+2013-02-07 14:58:02,765 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:58:02,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 75]
+2013-02-07 14:58:02,875 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:58:03,046 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 69]
+2013-02-07 14:58:03,046 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:58:03,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=64: 74]
+2013-02-07 14:58:03,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:58:03,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=64: 0D 0A]
+2013-02-07 14:58:03,625 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 14:58:03,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 15:04:50,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 15:04:50,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 15:04:55,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:04:57,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 15:04:57,625 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:04:57,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 68]
+2013-02-07 15:04:57,875 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:04:58,125 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 65]
+2013-02-07 15:04:58,125 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:04:58,343 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=1024: 0D 0A]
+2013-02-07 15:04:58,343 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:04:58,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:05:03,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:08,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:13,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:18,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:23,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:28,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:33,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:38,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:43,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:48,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:53,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:05:58,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:03,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:08,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:13,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:18,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:23,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:28,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:33,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:38,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:43,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:48,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:53,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:06:58,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:01,953 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 15:07:01,953 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 15:07:03,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:06,953 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:08,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:11,953 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:13,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:14,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=2048: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:14,640 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:18,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:19,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:23,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:24,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:28,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:29,640 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:30,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=3 cap=2048: 00 0D 0D]
+2013-02-07 15:07:30,328 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:33,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:35,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:38,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:40,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:43,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:45,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:48,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:50,328 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:53,031 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=1024: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:53,031 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:53,265 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=1024: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:53,265 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:53,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:53,468 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=512: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:53,468 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:53,671 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=512: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:53,671 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:53,875 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=256: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:53,875 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:54,171 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=20 cap=256: 6A 64 6A 64 6A 64 6A 64 6A 64 6A 64 6A 64 6A 64...]
+2013-02-07 15:07:54,171 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:54,390 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=10 cap=128: 6A 64 6A 64 6A 64 6A 64 6A 64]
+2013-02-07 15:07:54,390 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:07:58,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:07:59,390 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:03,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:04,390 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:08,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:09,390 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:11,703 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 15:08:13,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:18,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:23,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:28,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:33,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:08:38,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:19,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 15:10:19,359 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 15:10:21,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 74]
+2013-02-07 15:10:21,109 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:10:21,187 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=2048: 65]
+2013-02-07 15:10:21,187 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:10:21,750 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 6A]
+2013-02-07 15:10:21,750 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:10:21,906 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=1 cap=1024: 64]
+2013-02-07 15:10:21,906 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:10:22,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=2 cap=512: 0D 0A]
+2013-02-07 15:10:22,109 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 15:10:22,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:10:27,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:32,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:37,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:42,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:47,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:49,937 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 15:10:49,937 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 15:10:52,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:52,812 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=9 cap=2048: 73 74 61 74 75 73 3F 0D 0A]
+2013-02-07 15:10:52,812 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:10:52,828 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:10:57,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:10:57,828 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:01,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=9 cap=2048: 73 74 61 74 75 73 3F 0D 0A]
+2013-02-07 15:11:01,625 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:11:01,625 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:11:02,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:03,156 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=9 cap=1024: 73 74 61 74 75 73 3F 0D 0A]
+2013-02-07 15:11:03,156 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:11:03,156 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:11:04,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=9 cap=1024: 73 74 61 74 75 73 3F 0D 0A]
+2013-02-07 15:11:04,093 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 2
+2013-02-07 15:11:04,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - SENT: HeapBuffer[pos=0 lim=0 cap=0: empty]
+2013-02-07 15:11:07,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:09,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:12,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:13,203 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 15:11:13,203 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 15:11:14,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:17,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:18,140 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED: HeapBuffer[pos=0 lim=6 cap=2048: 73 73 73 73 73 73]
+2013-02-07 15:11:18,140 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 3
+2013-02-07 15:11:19,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:22,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:23,140 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:24,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:27,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:27,281 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 15:11:29,093 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:32,109 INFO [org.apache.mina.filter.logging.LoggingFilter] - IDLE
+2013-02-07 15:11:32,593 INFO [org.apache.mina.filter.logging.LoggingFilter] - CLOSED
+2013-02-07 16:29:53,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 16:29:53,765 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 16:29:53,765 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 16:29:53,781 WARN [org.apache.mina.filter.logging.LoggingFilter] - EXCEPTION :
+org.apache.mina.filter.codec.ProtocolDecoderException: No appropriate message decoder: 00 52 00 41 32 30 30 2C 56 65 72 20 31 2E 30 36 2C 20 43 6F 70 79 72 69 67 68 74 20 32 30 31 32 20 48 61 6E 67 7A 68 6F 75 20 4C 6F 6E 67 47 65 6E 65 20 53 63 69 65 6E 74 69 66 69 63 20 49 6E 73 74 72 75 6D 65 6E 74 73 20 43 6F 2E 2C 20 4C 74 64 2E 0D 0A (Hexdump: 00 52 00 41 32 30 30 2C 56 65 72 20 31 2E 30 36 2C 20 43 6F 70 79 72 69 67 68 74 20 32 30 31 32 20 48 61 6E 67 7A 68 6F 75 20 4C 6F 6E 67 47 65 6E 65 20 53 63 69 65 6E 74 69 66 69 63 20 49 6E 73 74 72 75 6D 65 6E 74 73 20 43 6F 2E 2C 20 4C 74 64 2E 0D 0A)
+	at org.apache.mina.filter.codec.demux.DemuxingProtocolDecoder.doDecode(DemuxingProtocolDecoder.java:161)
+	at org.apache.mina.filter.codec.CumulativeProtocolDecoder.decode(CumulativeProtocolDecoder.java:176)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:232)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:410)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:710)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2013-02-07 16:29:53,781 WARN [org.apache.mina.core.service.IoHandlerAdapter] - EXCEPTION, please implement com.mina.ClientSessionHandler.exceptionCaught() for proper handling:
+org.apache.mina.filter.codec.ProtocolDecoderException: No appropriate message decoder: 00 52 00 41 32 30 30 2C 56 65 72 20 31 2E 30 36 2C 20 43 6F 70 79 72 69 67 68 74 20 32 30 31 32 20 48 61 6E 67 7A 68 6F 75 20 4C 6F 6E 67 47 65 6E 65 20 53 63 69 65 6E 74 69 66 69 63 20 49 6E 73 74 72 75 6D 65 6E 74 73 20 43 6F 2E 2C 20 4C 74 64 2E 0D 0A (Hexdump: 00 52 00 41 32 30 30 2C 56 65 72 20 31 2E 30 36 2C 20 43 6F 70 79 72 69 67 68 74 20 32 30 31 32 20 48 61 6E 67 7A 68 6F 75 20 4C 6F 6E 67 47 65 6E 65 20 53 63 69 65 6E 74 69 66 69 63 20 49 6E 73 74 72 75 6D 65 6E 74 73 20 43 6F 2E 2C 20 4C 74 64 2E 0D 0A)
+	at org.apache.mina.filter.codec.demux.DemuxingProtocolDecoder.doDecode(DemuxingProtocolDecoder.java:161)
+	at org.apache.mina.filter.codec.CumulativeProtocolDecoder.decode(CumulativeProtocolDecoder.java:176)
+	at org.apache.mina.filter.codec.ProtocolCodecFilter.messageReceived(ProtocolCodecFilter.java:232)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:765)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:109)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:417)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:410)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:710)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:664)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:653)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:67)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1124)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2013-02-07 16:33:32,500 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 16:33:32,500 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 16:33:33,265 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 16:33:40,812 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1
+2013-02-07 16:33:40,812 INFO [org.apache.mina.filter.logging.LoggingFilter] - RECEIVED:     R A200,Ver 1.06, Copyright 2012 Hangzhou LongGene Scientific Instruments Co., Ltd.
+2013-02-07 16:36:55,515 INFO [org.apache.mina.filter.logging.LoggingFilter] - CREATED
+2013-02-07 16:36:55,515 INFO [org.apache.mina.filter.logging.LoggingFilter] - OPENED
+2013-02-07 16:36:56,015 DEBUG [org.apache.mina.filter.codec.ProtocolCodecFilter] - Processing a MESSAGE_RECEIVED for session 1

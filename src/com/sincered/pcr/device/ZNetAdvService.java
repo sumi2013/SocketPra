@@ -9,16 +9,31 @@ import com.sun.jna.Native;
 import com.sun.jna.ptr.ByReference;
 import com.sun.jna.ptr.ByteByReference;
 import com.sun.jna.ptr.IntByReference;
-/**
+/**ZNE-100TL设备底层接口包装
+ * 
+ * 将ZNetAdv.dll文件放入C:\WINDOWS\system32文件夹
+ * 
  * 设备100-TL为单串口产品
  * 使用多串口协议
  * 
  * @author Administrator
+ * 
+ * 其中方法返回值说明:
+ * 返回1表示成功，其余返回错误码
+ * 错误码列表
+ * 0	普通错误
+ * 100	获取设备信息失败
+ * 101	不支持的操作
+ * 102	密码错误
+ * 103	连接失败
+ * 104	命令没有响应
+ * 105	没有登录
+ * 106	无效的命令码
+ * 107	参数格式不对
+ * 108	参数长度不对
  *
  */
-public class ZNetAdvService {
-
-	
+public class ZNetAdvService {	
 	
 	public short SearchAll(){
 		return ZNetAdvImpl.instance.ZN_SearchAll();		
@@ -52,7 +67,7 @@ public class ZNetAdvService {
 		return result;
 	}
 	
-	/** 发送命令到设备,只适用于单串口设备
+	/** 发送命令到设备,只适用于单串口设备	[暂时用不到]
 	 * 
 	 * @param devtype  设备类型
 	 * @param szip 	  设备IP

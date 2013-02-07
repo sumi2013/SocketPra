@@ -11,6 +11,25 @@ import com.sincered.pcr.device.ZNetAdvService.ZNetAdvImpl;
 import com.sun.jna.ptr.ByteByReference;
 import com.sun.jna.ptr.IntByReference;
 
+/**ZNE-100TL设备的服务类
+ * 
+ * @author Administrator
+ * 
+ * 其中方法返回值说明:
+ * 返回1表示成功，其余返回错误码
+ * 错误码列表
+ * 0	普通错误
+ * 100	获取设备信息失败
+ * 101	不支持的操作
+ * 102	密码错误
+ * 103	连接失败
+ * 104	命令没有响应
+ * 105	没有登录
+ * 106	无效的命令码
+ * 107	参数格式不对
+ * 108	参数长度不对
+ * 
+ */
 public class ZNetService extends ZNetAdvService {
 
 	private Logger logger=Logger.getLogger(ZNetService.class);
@@ -99,12 +118,7 @@ public class ZNetService extends ZNetAdvService {
 				logger.info(s+":"+new String(st,0,st.length ).trim());
 				map.put(s, new String(st,0,st.length ).trim());
 			}
-		}
-		if(super.ExitTCP()==1){
-			logger.info("ExitTCP success!");
-		}else{
-			logger.error("ExitTCP failed!");		
-		}
+		}		
 		logger.info("GetDevConfigTCP end.");
 		return map;
 	}
@@ -120,6 +134,7 @@ public class ZNetService extends ZNetAdvService {
 	 * @return
 	 */
 	public short ModifyDevConfigTCP(Map<String,byte[]> map){
+		logger.error("ModifyDevConfigTCP start!");
 		short result = 0;
 		if(map.isEmpty()){
 			logger.error("ModifyDevConfigTCP error:map.isEmpty!");
@@ -134,13 +149,21 @@ public class ZNetService extends ZNetAdvService {
 				logger.error("ModifyDevConfigTCP error:"+o.toString()+"->"+new String(map.get(o)).trim());
 				return 0;	
 			}			
-		}
-		if(super.ExitTCP()==1){
+		}	
+		logger.error("ModifyDevConfigTCP end!");
+		return result;
+	}
+
+	/**退出配置,只适用于多串口设备
+	 * 
+	 */
+	public short ExitTCP(){
+		short result = super.ExitTCP();
+		if(result==1){
 			logger.info("ExitTCP success!");
 		}else{
 			logger.error("ExitTCP failed!");		
 		}
-		
 		return result;
 	}
 }
