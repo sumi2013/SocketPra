@@ -11,7 +11,10 @@ import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -26,7 +29,12 @@ import javax.comm.SerialPort;
 import javax.comm.UnsupportedCommOperationException;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.dom4j.Document;
+import org.dom4j.Element;
 
+import com.samples.XMLService;
+import com.sincered.pcr.device.AnalyzeReceiceCommand;
+import com.sincered.pcr.device.AnalyzeService;
 import com.sincered.pcr.device.Command;
 import com.sincered.pcr.device.NetworkPortCommand;
 import com.sincered.pcr.device.ZNetService;
@@ -49,8 +57,28 @@ public class DoZNet {
 		//LongGeneService longGeneService = new LongGeneService("192.168.1.108", 4003);
 		CommandConvertor convertor = new CommandConvertor();
 		System.out.println("start!");
+		
 	
+		XMLService xmlService = new XMLService();
+		Map m = new HashMap();
+		m.put("trier", "Jame");
+		m.put("title", "PCR45~90");
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String dateStr = format.format(new Date());
+		m.put("date", dateStr);
+		
+		List clist = new ArrayList();
+		clist.add(NetworkPortCommand.PROGRAM("PCR45~90").getCOMMAND());
+		clist.add(NetworkPortCommand.METHOD("BLOCK").getCOMMAND());
+		
+		Document doc = xmlService.createProgramDocument(m,clist);
 	
+		if(xmlService.writeToFile(doc))
+			System.out.println("write successful!");		
+		else
+			System.out.println("write failure!");
+		
+		
 		try {		
 			//List a = Arrays.asList(1,2,"STATUS");
 			//System.out.println(""+a.contains("STATUS"));
@@ -61,25 +89,28 @@ public class DoZNet {
 			//	comPortService.testComPort();
 			
 			//网口通讯
-		//	longGeneService.open();
-			NetworkPortCommand networkPortCommand = new NetworkPortCommand();
-			Command GETREV = networkPortCommand.GETREV(1);
-			System.out.println("status:"+GETREV.getSendCommand());
-			
-			String c = "STATUS?";
-			System.out.println("R:"+c.contains("status"));
-			/*for(int i=0;i<5;i++){
+			//longGeneService.open();
+			//NetworkPortCommand networkPortCommand = new NetworkPortCommand();
+			//Command REVTEMP = networkPortCommand.REVTEMP();
+			//AnalyzeReceiceCommand analyzeReceiceCommand = new AnalyzeReceiceCommand();
+			String rev = "test122,CALC,ON,32.6,94.2,91.5,94.0,94.2,1,4,180,\r\n";			
+			AnalyzeService analyzeService = new AnalyzeService();
+			System.out.println("result:"+analyzeService.Analyze(rev));
+			/*for(int i=0;i<20;i++){
 		    try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {			
 					e.printStackTrace();
 				}
-		    	   String cmd = longGeneService.SendCommand(GETREV.getSendCommand());
-		    	   System.out.println("sendCommand:'"+cmd+"'");
+		    	   String receiceMsg = longGeneService.SendCommand(REVTEMP.getSendCommand());
+		    	   System.out.println("receiceCommand:'"+receiceMsg+"'");
 		    	   System.out.println("============================");
-		    	   if(cmd!=null){
-			    	   int length = cmd.length();
+		    	   if(receiceMsg!=null){
+			    	   int length = receiceMsg.length();
 			    	   System.out.println("length:"+length);
+			    	 
+			    	   String msg = analyzeReceiceCommand.Analyze(REVTEMP, receiceMsg);
+			    	   System.out.println("analy Msg:"+msg);
 			    	   
 			    	   for(int j=0;j<length;j++){
 			    		   System.out.print("'"+cmd.charAt(j)+"',");
@@ -89,10 +120,7 @@ public class DoZNet {
 				    	   String cutStr = cmd.substring(cmd.indexOf("!")+1, cmd.lastIndexOf("\r"));
 				    	   System.out.println("find:"+cutStr);
 			    	   }
-			    	 
-		    	   }
-		    	  	
-		    	 
+		    	   }		    	  	
 		    }*/
 			
 			

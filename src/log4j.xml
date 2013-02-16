@@ -9,7 +9,7 @@
     <appender name="console.err" class="org.apache.log4j.ConsoleAppender">
     	<param name="target" value="System.err" />  
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%d %p [%c] - &lt;%m&gt;%n"/>
+            <param name="ConversionPattern" value="%d %p [%c] - &lt;%M&gt; &quot;%m&quot; %n"/>
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">  
             <param name="LevelMin" value="warn" />  
@@ -21,7 +21,7 @@
 	<appender name="console.out" class="org.apache.log4j.ConsoleAppender">
     	<param name="target" value="System.out" />  
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%d %p [%c] - &lt;%m&gt;%n"/>
+            <param name="ConversionPattern" value="%d %p [%c] - &lt;%M&gt;  &quot;%m&quot; %n"/>
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">  
             <param name="LevelMin" value="debug" />  
@@ -29,10 +29,11 @@
             <param name="AcceptOnMatch" value="false" />  
         </filter>  
     </appender>
-    
+  
+     
     <appender name="pcr" class="org.apache.log4j.DailyRollingFileAppender">
         <param name="File" value="../SocketExample/logs/pcr.log" />
-        <param name="DatePattern" value="'.'yyyy-MM-dd'.log'"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d %p [%c] - %m%n"/>
         </layout>

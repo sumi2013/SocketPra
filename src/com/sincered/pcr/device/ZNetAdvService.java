@@ -170,6 +170,12 @@ public class ZNetAdvService {
 	
 	
 	public interface ZNetAdvImpl extends Library{
+		/**搜索dll的路包括：
+		 * 1.项目根路径; 如:D:\XSD\workspace\SocketExample
+		 * 2.OS全局路径; 如:C:\WINDOWS 、C:\WINDOWS\system32
+		 * 3.path指定的路径;
+		 * 
+		 */
 		ZNetAdvImpl instance=(ZNetAdvImpl)Native.loadLibrary("ZNetAdv", ZNetAdvImpl.class);
 	
 		public short ZN_SearchAll();		
